@@ -2,44 +2,37 @@
 
 import { evBookConsult, evWaitingList, evSimplyBook, evCall, evWhatsApp, gaEvent } from "@/lib/ga";
 import { Kind } from "@/types/cta-links.types";
-import Link from "next/link";
 
 interface Props {
   kind: Kind;
-  href: string;
   label: string;
   location: string;
   className?: string;
 }
 
-const CtaLink = ({ kind, href, label, location, className }: Props) => {
+const CtaLink = ({ kind, label, location, className }: Props) => {
   const fire = () => {
     const params = { page: "personal-trainer-zurich", location, label };
     switch (kind) {
       case "book":
-        evBookConsult(params);
-        break;
+        return evBookConsult(params);
       case "waiting_list":
-        evWaitingList(params);
-        break;
-      case "simplybook":
-        evSimplyBook(params);
-        break;
+        return evWaitingList(params);
       case "call":
-        evCall(params);
-        break;
+        return evCall(params);
       case "whatsapp":
-        evWhatsApp(params);
-        break;
+        return evWhatsApp(params);
+      case "simplybook":
+        return evSimplyBook(params);
       default:
-        gaEvent("click_custom", params);
+        return gaEvent("click_custom", params);
     }
   };
 
   return (
-    <Link href={href} onClick={fire} className={className}>
+    <button type="button" onClick={fire} className={className}>
       {label}
-    </Link>
+    </button>
   );
 };
 

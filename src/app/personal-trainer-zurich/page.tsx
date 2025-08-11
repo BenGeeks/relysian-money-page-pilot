@@ -42,14 +42,12 @@ const PersonalTrainingZurichPage = () => {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center sm:justify-start">
             <CtaLink
               kind="book"
-              href="/contact"
               label="Book a Consult"
               location="hero"
               className="flex items-center justify-center rounded-full border border-white bg-white py-3 px-6 w-[230px] text-gray-800 text-xl hover:bg-blue-500 hover:text-white transition"
             />
             <CtaLink
               kind="custom"
-              href="/best-fat-loss-zurich"
               label="How It Works"
               location="hero"
               className="flex items-center justify-center rounded-full border border-white bg-white/20 py-3 px-6 w-[230px] text-white text-xl hover:bg-white hover:text-gray-800 transition"
@@ -80,13 +78,30 @@ const PersonalTrainingZurichPage = () => {
             <PriceCard name="Intensive" note="3× / week" />
             <PriceCard name="Executive" note="Custom plan" />
           </div>
-          <div className="mt-6">
+          <div className="flex mt-6 gap-8">
             <CtaLink
               kind="book"
-              href="/contact"
               label="Get a plan"
               location="packages"
-              className="inline-flex rounded-full border border-white bg-white/10 text-white px-6 py-3 hover:bg-white hover:text-gray-800 transition"
+              className="inline-flex rounded-full border border-white bg-white/10 text-white px-6 py-3 hover:bg-white hover:text-gray-800 transition cursor-pointer"
+            />
+            <CtaLink
+              kind="call"
+              label="Call"
+              location="footer"
+              className="inline-flex rounded-full border border-white bg-white/10 text-white px-6 py-3 hover:bg-white hover:text-gray-800 transition cursor-pointer"
+            />
+            <CtaLink
+              kind="whatsapp"
+              label="WhatsApp"
+              location="footer"
+              className="inline-flex rounded-full border border-white bg-white/10 text-white px-6 py-3 hover:bg-white hover:text-gray-800 transition cursor-pointer"
+            />
+            <CtaLink
+              kind="simplybook"
+              label="Book via SimplyBook"
+              location="hero"
+              className="inline-flex rounded-full border border-white bg-white/10 text-white px-6 py-3 hover:bg-white hover:text-gray-800 transition cursor-pointer"
             />
           </div>
         </section>
