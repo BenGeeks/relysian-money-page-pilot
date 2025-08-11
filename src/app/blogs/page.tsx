@@ -16,13 +16,13 @@ const Home = () => {
 
       <main className="relative flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="flex flex-col items-center gap-3">
-          <div className="text-[#00D8D8] text-7xl font-semibold flex flex-col items-center gap-3">
-            <h1>Personal Training Zurich</h1>
-            <h1>Science-Driven Fitness & Longevity</h1>
+          <div className="flex flex-col items-center gap-3 text-[#00D8D8] font-semibold">
+            <h1 className="text-7xl">Personal Training Zurich</h1>
+            <h1 className="text-7xl">Science-Driven Fitness & Longevity</h1>
           </div>
-          <div className="text-5xl flex flex-col items-center gap-3 mt-8">
-            <h2>We Take Challenges</h2>
-            <h2>Others Consider Impossible</h2>
+          <div className="flex flex-col items-center gap-3 mt-8">
+            <h2 className="text-5xl"> We Take Challenges</h2>
+            <h2 className="text-5xl">Others Consider Impossible</h2>
           </div>
           <div className="justify-self-end flex items-center gap-6 mt-6">
             <Link

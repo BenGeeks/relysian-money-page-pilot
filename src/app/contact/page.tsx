@@ -15,11 +15,11 @@ export default function Home() {
 
       <main className="relative flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="flex flex-col items-center gap-3">
-          <div className="text-[#00D8D8] text-5xl font-semibold flex flex-col items-center gap-3">
-            <h1>Get started on your longevity journey</h1>
+          <div className="text-[#00D8D8]  font-semibold flex flex-col items-center gap-3">
+            <h1 className="text-5xl">Get started on your longevity journey</h1>
           </div>
-          <div className="text-2xl flex flex-col items-center gap-3 mt-8">
-            <h2>Please share your contact information so we can get in touch</h2>
+          <div className=" flex flex-col items-center gap-3 mt-8">
+            <h2 className="text-2xl">Please share your contact information so we can get in touch</h2>
           </div>
         </div>
       </main>
