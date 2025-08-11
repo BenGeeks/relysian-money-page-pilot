@@ -4,10 +4,10 @@ import { evBookConsult, evWaitingList, evSimplyBook, evCall, evWhatsApp, gaEvent
 import { Kind } from "@/types/cta-links.types";
 
 interface Props {
-  kind: Kind;
-  label: string;
-  location: string;
   className?: string;
+  location: string;
+  label: string;
+  kind: Kind;
 }
 
 const CtaLink = ({ kind, label, location, className }: Props) => {

@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
 import { Figtree, Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import HeaderComponent from "./components/header";
 import FooterComponent from "./components/footer";
-import { GoogleAnalytics } from "@next/third-parties/google";
-// import GoogleAnalytics from "./components/google-analytics";
+import type { Metadata } from "next";
+
+import "./globals.css";
 
 const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string;
 

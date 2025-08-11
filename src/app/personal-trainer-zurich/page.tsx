@@ -1,9 +1,9 @@
+export const revalidate = 3600;
+
 import Image from "next/image";
 
 import ServiceCard from "./service-card";
 import CtaLink from "./cta-links";
-
-export const revalidate = 3600;
 
 export const metadata = {
   title: "Personal Trainer in Zurich | Science-Driven Fat Loss & Longevity",

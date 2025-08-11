@@ -1,13 +1,11 @@
-export const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string;
-
 import { sendGAEvent } from "@next/third-parties/google";
 
 type GAParams = {
-  page?: string;
+  [k: string]: unknown;
   location?: string;
   label?: string;
   value?: number;
-  [k: string]: unknown;
+  page?: string;
 };
 
 const withDebug = (params: Record<string, unknown> = {}) => {
@@ -20,13 +18,10 @@ const withDebug = (params: Record<string, unknown> = {}) => {
 };
 
 export const pageview = (url: string) => {
-  //   if (!GA_ID) return;
-  //   window.gtag?.("config", GA_ID, { page_path: url, debug_mode: true });
   sendGAEvent("event", "page_view", withDebug({ page_path: url }));
 };
 
 export const gaEvent = (action: string, params: Record<string, unknown> = {}) => {
-  //   window.gtag?.("event", action, withDebug(params));
   sendGAEvent("event", action, withDebug(params));
 };
 

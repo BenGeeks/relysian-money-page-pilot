@@ -1,8 +1,9 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect, useRef, useState } from "react";
 import SocialMediaComponents from "./social-media";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeaderComponent = () => {
   const [hidden, setHidden] = useState(false);
@@ -24,8 +25,8 @@ const HeaderComponent = () => {
       const y = window.scrollY || 0;
       if (!ticking.current) {
         requestAnimationFrame(() => {
-          setHidden(y > lastY.current && y > 80); // hide when scrolling down past 80px
-          setAtTop(y < 10); // lighter bg at top
+          setHidden(y > lastY.current && y > 80);
+          setAtTop(y < 10);
           lastY.current = y;
           ticking.current = false;
         });
