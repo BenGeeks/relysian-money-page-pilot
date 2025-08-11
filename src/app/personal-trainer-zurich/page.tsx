@@ -65,9 +65,9 @@ const PersonalTrainingZurichPage = () => {
         <section className="mt-16">
           <h2 className="text-3xl text-white/95 font-semibold">What we do</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            <ServiceCard title="Fat Loss" desc="Sustainable body recomposition and nutrition." />
-            <ServiceCard title="Strength & Rehab" desc="Progressive strength with injury-aware programming." />
-            <ServiceCard title="Longevity" desc="Muscle, cardio, mobility, sleep & recovery." />
+            <ServiceCard title="Fat Loss" desc="Sustainable body recomposition and nutrition." href="/personal-trainer-zurich" />
+            <ServiceCard title="Strength & Rehab" desc="Progressive strength with injury-aware programming." href="/personal-trainer-zurich" />
+            <ServiceCard title="Longevity" desc="Muscle, cardio, mobility, sleep & recovery." href="/personal-trainer-zurich" />
           </div>
         </section>
 

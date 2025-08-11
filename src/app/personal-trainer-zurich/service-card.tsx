@@ -1,15 +1,17 @@
 "use client";
 
 import { gaEvent } from "@/lib/ga";
-import { Button } from "antd";
+import Link from "next/link";
 
 interface Props {
   title: string;
   desc: string;
+  href: string;
 }
-const ServiceCard = ({ title, desc }: Props) => {
+const ServiceCard = ({ title, desc, href }: Props) => {
   return (
-    <Button
+    <Link
+      href={href}
       onClick={() =>
         gaEvent("click_service", {
           page: "personal-trainer-zurich",
@@ -21,7 +23,7 @@ const ServiceCard = ({ title, desc }: Props) => {
     >
       <div className="text-xl text-white/95 font-semibold">{title}</div>
       <p className="mt-2 text-white/80">{desc}</p>
-    </Button>
+    </Link>
   );
 };
 
