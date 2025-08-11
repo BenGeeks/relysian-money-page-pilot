@@ -36,7 +36,7 @@ const PersonalTrainingZurichPage = () => {
 
       <main className="relative mx-auto max-w-6xl px-6 py-20 sm:py-28">
         <section className="text-center sm:text-left">
-          <h1 className="text-5xl sm:text-7xl text-[#00D8D8] font-semibold leading-tight">Personal Trainer Zurich</h1>
+          <h1 className="text-5xl text-[#00D8D8] font-semibold leading-tight">Personal Trainer Zurich</h1>
           <p className="mt-4 text-2xl sm:text-3xl text-white/90">Science-Driven Fitness & Longevity</p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center sm:justify-start">
