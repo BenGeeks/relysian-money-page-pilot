@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="relative font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 overflow-hidden">
-      {/* LCP image (no CSS background) */}
       <Image
         src="https://relysian.ch/wp-content/uploads/2025/03/relysian_personal_training.jpg"
         alt=""

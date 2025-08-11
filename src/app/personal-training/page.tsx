@@ -1,9 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <div className="absolute inset-0 bg-[url('https://relysian.ch/wp-content/uploads/2025/03/relysian_personal_training.jpg')] bg-cover bg-center opacity-20"></div>
+    <div className="relative font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 overflow-hidden">
+      <Image
+        src="https://relysian.ch/wp-content/uploads/2025/03/relysian_personal_training.jpg"
+        alt=""
+        fill
+        priority
+        fetchPriority="high"
+        sizes="100vw"
+        className="object-cover object-center opacity-20"
+      />
 
       <main className="relative flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="flex flex-col items-center gap-3">
