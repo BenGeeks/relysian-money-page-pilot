@@ -3,6 +3,7 @@ import { Figtree, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import HeaderComponent from "./components/header";
 import FooterComponent from "./components/footer";
+import GoogleAnalytics from "./components/google-analytics";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function RootLayout({
         <HeaderComponent />
         {children}
         <FooterComponent />
+        <GoogleAnalytics />
       </body>
     </html>
   );
