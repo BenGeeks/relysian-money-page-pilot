@@ -1,5 +1,7 @@
 export const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string;
 
+import { sendGAEvent } from "@next/third-parties/google";
+
 type GAParams = {
   page?: string;
   location?: string;
@@ -18,12 +20,14 @@ const withDebug = (params: Record<string, unknown> = {}) => {
 };
 
 export const pageview = (url: string) => {
-  if (!GA_ID) return;
-  window.gtag?.("config", GA_ID, { page_path: url, debug_mode: true });
+  //   if (!GA_ID) return;
+  //   window.gtag?.("config", GA_ID, { page_path: url, debug_mode: true });
+  sendGAEvent("event", "page_view", withDebug({ page_path: url }));
 };
 
 export const gaEvent = (action: string, params: Record<string, unknown> = {}) => {
-  window.gtag?.("event", action, withDebug(params));
+  //   window.gtag?.("event", action, withDebug(params));
+  sendGAEvent("event", action, withDebug(params));
 };
 
 export const evBookConsult = (p: GAParams = {}) => gaEvent("click_book_consult", p);
