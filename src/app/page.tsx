@@ -59,7 +59,15 @@ const Home = () => {
             </div>
 
             <div className="relative w-full min-h-[460px] md:min-h-[560px] rounded-2xl overflow-hidden">
-              <Image src="/images/precision_diagnostics_bg_img.webp" alt="" fill sizes="(min-width: 768px) 50vw, 100vw" className="z-0 object-cover object-center opacity-30" aria-hidden />
+              <Image
+                src="/images/precision_diagnostics_bg_img.webp"
+                alt="Brain CT Scan"
+                quality={60}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="z-0 object-cover object-center opacity-30"
+                aria-hidden
+              />
               <div className="relative z-10 flex flex-col items-center justify-center text-center gap-6 p-6 sm:p-10 h-full min-h-[460px] md:min-h-[560px]">
                 <h3 className="text-3xl sm:text-4xl font-semibold text-white leading-tight [text-wrap:balance]">Precision Diagnostics — Early Risk Detection</h3>
                 <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-[65ch] [text-wrap:balance]">
