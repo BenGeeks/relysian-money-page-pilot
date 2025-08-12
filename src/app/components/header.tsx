@@ -12,7 +12,7 @@ const HeaderComponent = () => {
   const ticking = useRef(false);
 
   const NAVIGATION = [
-    { href: "/", label: "Home" },
+    { href: "/home", label: "Home" },
     { href: "/personal-training", label: "Personal Training" },
     { href: "/about-us", label: "About" },
     { href: "/blogs", label: "Blog" },
