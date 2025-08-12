@@ -39,7 +39,7 @@ const Home = () => {
           <h2 className="mt-6 text-xl sm:text-4xl text-black leading-relaxed max-w-[70ch] mx-auto [text-wrap:balance] p-4">
             Unlock the power of advanced diagnostics, personalized health plans, expert nutrition guidance, and swiss certified personal trainers in Zurich.
           </h2>
-          <h1 className="mt-8 text-[36px] sm:text-[42px] font-semibold text-black leading-tight [text-wrap:balance]">With Relysian, you don’t just train — you evolve.</h1>
+          <h1 className="text-[36px] sm:text-[42px] mt-8  font-semibold text-black leading-tight [text-wrap:balance]">With Relysian, you don’t just train — you evolve.</h1>
         </div>
       </SectionContainer>
       <SectionContainer className="bg-black">
